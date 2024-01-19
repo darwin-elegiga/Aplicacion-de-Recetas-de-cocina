@@ -1,0 +1,13 @@
+<div class="div_exterior">
+
+  <div class="div_imagen">
+    <a [routerLink]="['informacion',indice]" class="ref">
+      <img [src]=receta.imagen id="imagen">
+      {{receta.nombre}}
+    </a>
+  </div>
+  <ul>
+    <li *ngFor="let item of receta.ingredientes">{{item}}</li>
+  </ul>
+
+</div>

@@ -1,0 +1,40 @@
+input{
+  border-radius: 10px;
+  padding: 5px;
+  border-color: #5B6EFD;
+}
+.principal{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.div_ingredientes{
+  display: flex;
+  align-items: center;
+}
+
+.lista_ingredientes{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.supreing{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: .5px solid #5B6EFD;
+  border-radius: 30px;
+  padding: 30px;
+  margin-left: 50px;
+}
+.div_nombre-preparacion{
+  margin-right: 50px;
+}
+.lista_ingredientes input{
+  margin-bottom: 16px;
+}
+body{display: flex; flex-direction: column; align-items: center;}
+.bagg{width: max-content; margin-top: 80px;}

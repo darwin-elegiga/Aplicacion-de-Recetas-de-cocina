@@ -1,0 +1,45 @@
+.div_exterior{
+  display: flex;
+  position: relative;
+  top: 40px;
+  align-items: center;
+  margin-left: 5%;
+  border-bottom: .5px solid;
+  width: 40%;
+  padding: 15px;
+}
+ul{
+  margin-left: 40px;
+}
+
+a{
+font-size: 40px;
+font-weight: 600;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+
+  font-family: cursive;
+}
+
+.div_imagen{
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  align-items: center;
+}
+#imagen{
+  width: 200px;
+  border-radius: 30px;
+  transition: all ease 500ms;
+
+}
+
+.ref:hover img{
+ border: 1px solid salmon;
+ box-shadow: 0px 0px 10px 0px  rgb(92, 87, 87);
+
+}

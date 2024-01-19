@@ -1,0 +1,66 @@
+body{display: flex; flex-direction: column; align-items: center;}
+
+img{
+  width: 400px;
+  border-radius: 30px;
+}
+.principal{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: max-content;
+  width: 100%;
+}
+.agregar{
+  margin: 30px;
+}
+.agregar a{
+  background-color: rgba(89, 179, 243, 0.457);
+  border:2px solid  rgba(73, 37, 181, 0.457)
+}
+.agregar a:hover{
+  color: rgb(75, 41, 41);
+ box-shadow: 0px 0px 10px 0px  rgb(92, 87, 87);
+
+}
+
+.elemento{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: cursive;
+  margin: 20px;
+  text-decoration: none;
+  color: black;
+  transition: all ease 300ms;
+}
+.interior:hover .elemento{
+  transform: scale(1.01);
+}
+.interior{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.opciones{
+  display: flex;
+}
+.button{
+  border: 1px solid #5B6EFD;
+  border-radius: 30px;
+  padding: 7px;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+  transition: all ease 300ms;
+  margin:0px 5px 0px 5px;
+}
+.button:hover{
+  background-color: black;
+  color: #fff;
+
+}
+

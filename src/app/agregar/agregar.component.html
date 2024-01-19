@@ -1,0 +1,83 @@
+<body>
+  <h1 class="id">Agregue nueva receta</h1>
+
+
+  <div class="opciones">
+
+      <div class="nombre-preparacion">
+
+        <div class="nombre">
+          <div class="agregar_nombre">
+            <h2>Nombre de la receta</h2>
+            <input type="text" placeholder="nombre" [(ngModel)]="nombre">
+          </div>
+        </div>
+
+
+        <div class="preparacion">
+          <div class="agregar_preparacion">
+            <h2>Metodo de preparación</h2>
+            <input type="text" placeholder="preparación"[(ngModel)]="preparacion">
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="img-ingredientes">
+
+        <div class="imagen">
+          <div class="agregar_imagen">
+            <h2>Enlace a la imagen</h2>
+            <input type="text" placeholder="url imagen"[(ngModel)]="imagen">
+          </div>
+        </div>
+
+
+        <div class="ingredientes">
+
+          <div class="agregar_ingredientes">
+
+            <h2>Ingredientes</h2>
+              <input type="text" placeholder="Ingredientes" [(ngModel)]="ingrediente">
+              <input type="submit" value="Agregar" (click)="agregaringrediente()">
+          </div>
+
+
+      </div>
+      </div>
+  </div>
+
+<div class="div_visualizador">
+
+
+
+<div class="principal">
+
+  <div class="div_visualizador-imagen">
+    <img [src]=imagen id="imagen">
+    <h1>{{nombre}}</h1>
+  </div>
+
+    <div class="secundario">
+      <div class="visualizador_ingredientes">
+        <h2>Ingredientes</h2>
+        <ul>
+          <li *ngFor="let item of ingredientes">{{item}}</li>
+        </ul>
+      </div>
+      <div class="preparacion">
+        <h2>Forma de preparación</h2>
+        <div class="text_preparacion">
+          <p class="p_preparacion">{{preparacion}}</p>
+        </div>
+      </div>
+  </div>
+
+
+  </div>
+</div>
+<button class="btn btn-outline-primary" (click)="agregarreceta()">Agregar Receta</button>
+
+
+</body>

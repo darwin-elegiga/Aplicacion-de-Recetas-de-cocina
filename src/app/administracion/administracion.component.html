@@ -1,0 +1,22 @@
+<body>
+
+<div class="principal">
+  <div *ngFor="let item of listado, let indice=index" indice="indice" class="interior">
+      <div class="elemento">
+        <a [routerLink]="['/informacion',indice]" class="ref">
+        <img [src]=item.imagen alt="imagen" > </a>
+        {{item.nombre}}
+      </div>
+      <div class="opciones">
+        <a class="button eliminar" (click)="eliminar(indice)">Eliminar</a>
+        <a class="button modificar" [routerLink]="['/modificar', indice]">Modificar</a>
+      </div>
+  </div>
+
+</div>
+  <div class="agregar">
+  <a class="button agregar" [routerLink]="['/agregar']">Agregar Nueva Receta</a>
+
+  </div>
+</body>
+<router-outlet></router-outlet>

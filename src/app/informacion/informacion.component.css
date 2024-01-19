@@ -1,0 +1,51 @@
+body{
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#imagen{
+  width: 35vw;
+  border-radius: 30px;
+  box-shadow: 10px solid black;
+  position: relative;
+  /* left: -50px; */
+}
+.principal{
+  display: flex;
+  align-items: center;
+}
+.secundario1{
+  flex-grow: 1;
+  flex-direction: column;
+  text-align: center;
+  font-family: cursive;
+
+}
+.secundario{
+  width: 40vw;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+
+}
+
+.preparacion{
+  /* margin-left: 90px; */
+  margin-left: 5vw;
+  font-size: 20px;
+  width: 250px;
+  height: 400px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.ingredientes{
+  width: 250px;
+  height: 400px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  display: none;
+}
